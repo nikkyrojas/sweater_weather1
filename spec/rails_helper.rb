@@ -70,7 +70,8 @@ VCR.configure do |config|
   config.configure_rspec_metadata!
   config.filter_sensitive_data('DONT SHOW MY API KEY') { ENV['books_api_key']}
   config.filter_sensitive_data('DONT SHOW MY API KEY') { ENV['movies_api_key']}
-  config.default_cassette_options = { re_record_interval: 1.day }
+  config.default_cassette_options = { re_record_interval: 4.day }
+  config.allow_http_connections_when_no_cassette = true
 end
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|
