@@ -12,4 +12,13 @@ RSpec.describe BreweryService do
     expect(response.first).to be_a(Hash)
     expect(response.first[:name]).to be_a(String)
   end
+  xit "edgecase retrieves a response with invalid input", :vcr do 
+
+    city = "asfaf"
+    qty = 2
+    response = BreweryService.get_breweries(city, qty)
+
+    expect(response).to be_a(Hash)
+    expect(response.body).to include("invalid input")
+  end
 end
