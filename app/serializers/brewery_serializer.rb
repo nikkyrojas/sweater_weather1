@@ -1,6 +1,5 @@
 class BrewerySerializer
     def self.format_breweries(breweries, weather)
-      binding.pry
       {
         data: {
           id: nil,

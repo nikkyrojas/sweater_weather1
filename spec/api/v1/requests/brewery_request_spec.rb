@@ -16,7 +16,6 @@ RSpec.describe "Brewery Request" do
     expect(json_response[:attributes][:forecast]).to be_a(Hash)
     expect(json_response[:attributes][:forecast][:summary]).to be_a(String)
     expect(json_response[:attributes][:breweries]).to be_a(Array)
-    binding.pry
     expect(json_response[:attributes][:breweries].count).to eq(5)
   end
 end
