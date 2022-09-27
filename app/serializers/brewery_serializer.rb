@@ -11,13 +11,11 @@ class BrewerySerializer
               temperature: "#{weather.temperature}"
             },
             breweries: breweries.map do |brewery| 
-              [
                 {
                   id: "#{brewery[:id]}",
                   name: brewery[:name],
                   brewery_type: brewery[:brewery_type]
                 }
-              ]
             end
           }
         }
