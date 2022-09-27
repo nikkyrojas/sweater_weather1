@@ -1,5 +1,5 @@
 class BrewerySerializer
-    def self.format_breweries(breweries)
+    def self.format_breweries(breweries, weather)
       binding.pry
       {
         data: {
@@ -8,8 +8,8 @@ class BrewerySerializer
           attributes: {
             destination: "denver",
             forecast: {
-              summary: "Cloudy with a chance of meatballs",
-              temperature: "83 F"
+              summary: weather.conditions,
+              temperature: "#{weather.temperature}"
             },
             breweries: breweries.map do |brewery| 
               [
