@@ -8,7 +8,7 @@ RSpec.describe 'Weather API' do
     expect(response.status).to eq(200)
   end 
  
-  it 'response is successful', :vcr do 
+  it 'response format is correct', :vcr do 
     get '/api/v1/forecast?location=Denver,Co'
 
 
