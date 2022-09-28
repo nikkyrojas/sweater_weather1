@@ -20,7 +20,7 @@ RSpec.describe 'User API' do
     new_user = User.last
 
     expect(json_response).to be_a Hash
-    expect(new_user.email).to eq("testing1@example.com")
+    expect(new_user.email).to eq("testing123@example.com")
     expect(new_user.password_digest).to be_a(String)
   end 
 
@@ -34,8 +34,8 @@ RSpec.describe 'User API' do
     headers = {"CONTENT_TYPE" => "application/json"}
 
     post "/api/v1/users", headers: headers, params: JSON.generate(user_params)
-
     expect(response).to_not be_successful
     expect(response.status).to eq(400)
+    expect(response.body).to include("One or all of the following have occured: Passwords do not match, email already exist, or field is missing")
   end 
 end
