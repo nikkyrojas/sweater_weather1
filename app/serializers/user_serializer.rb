@@ -1,6 +1,5 @@
 class UserSerializer
   def self.create_user(new_user)
-    binding.pry
     {
       data:{
         id: "#{new_user.id}",
