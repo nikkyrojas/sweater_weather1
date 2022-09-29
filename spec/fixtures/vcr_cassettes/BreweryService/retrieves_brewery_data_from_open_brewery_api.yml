@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 27 Sep 2022 15:09:36 GMT
+      - Thu, 29 Sep 2022 14:17:57 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -45,25 +45,23 @@ http_interactions:
       Etag:
       - W/"7e4aac281eb117fb7cedb0eeeff0f769"
       X-Request-Id:
-      - 0f8a355a-0f0d-4c15-885f-232bc5a1a7c6
+      - ef25e7a5-7260-4b65-bf44-606bc9ab0a70
       X-Runtime:
-      - '0.015814'
+      - '0.024208'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
       Via:
       - 1.1 vegur
       Cf-Cache-Status:
-      - HIT
-      Age:
-      - '5450'
+      - MISS
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=U%2BgaWvKn5auqfsp4hRh1z5s4nqzdZT%2F%2F54XYs6OHN5pHe%2FczGdpvfeuaRe%2BikghDVB2ZRFbfRO%2F1siq66VSzK%2FBN37%2BkiFBXEh%2F2Rh0rjqDyReB0uucDjIKRDn6CiTBnKkW%2FDX9BLPAiR3J31aD0eMrb4JQ%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EKsR5xXnFhrhvpg%2FvBtEPpQiaRttIcwfNLNNLqVgzeMHuWulR2e8yCdyTBSb8JiZce33m6SR7VQck%2FR3BmyicbhrZFu7iWvbkJoDdykjNcX7B%2B2GvV9FfxzoDVGTCUYZvRgh10nwoiEILEp5OMDlznRXshs%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 7515294f1e9ae756-DFW
+      - 75255862ff4ae80b-DFW
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -79,5 +77,5 @@ http_interactions:
         States","longitude":null,"latitude":null,"phone":"3038321245","website_url":"http://www.alpinedogbrewery.com","updated_at":"2022-08-20T02:56:08.975Z","created_at":"2022-08-20T02:56:08.975Z"},{"id":"alternation-brewing-company-denver","name":"Alternation
         Brewing Company","brewery_type":"micro","street":"1539 S Broadway","address_2":null,"address_3":null,"city":"Denver","state":"Colorado","county_province":null,"postal_code":"80210-2607","country":"United
         States","longitude":"-104.9876117","latitude":"39.68866374","phone":"3038025340","website_url":"http://www.alternationbrewing.com","updated_at":"2022-08-20T02:56:08.975Z","created_at":"2022-08-20T02:56:08.975Z"}]'
-  recorded_at: Tue, 27 Sep 2022 15:09:36 GMT
+  recorded_at: Thu, 29 Sep 2022 14:17:57 GMT
 recorded_with: VCR 6.1.0

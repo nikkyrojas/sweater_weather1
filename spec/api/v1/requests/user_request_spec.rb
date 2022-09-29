@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'User API' do  
-  it 'user post call returns a serializes response of email, password, password confirmation', :vcr do 
+  it 'user post call returns a serialized response of email, password, password confirmation', :vcr do 
     user_params = ({
                     "email": "testing123@example.com",
                     "password": "test123",
